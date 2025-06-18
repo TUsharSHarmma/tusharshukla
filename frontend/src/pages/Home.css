@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+.home {
+  position: relative;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  background: radial-gradient(circle at 20% 20%, #0f0f2d, #000);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+
+.neon-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(0deg, rgba(0, 217, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 217, 255, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.home-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  z-index: 2;
+  
+}
+
+.text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 2.3rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.neon {
+  color: #00d9ff;
+  text-shadow: 0 0 5px #00d9ff, 0 0 15px #00d9ff;
+}
+
+.typewriter-text {
+  color: #ff00cc;
+  font-weight: 600;
+  text-shadow: 0 0 5px #ff00cc, 0 0 15px #ff00cc;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #aaa;
+}
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-glow {
+  padding: 0.8rem 1.6rem;
+  background: #00d9ff;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #00d9ff, 0 0 20px #00d9ff66;
+}
+
+.btn-glow:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00d9ff, 0 0 30px #00d9ff99;
+}
+
+.btn-glow.outline {
+  background: transparent;
+  color: #00d9ff;
+  border: 2px solid #00d9ff;
+}
+
+.image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 330px;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home {
+    padding: 2rem 1rem;
+    height: auto;
+  }
+
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text {
+    max-width: 100%;
+  }
+
+  .image-wrapper {
+    margin-top: 1rem;
+  }
+
+  .btn-group {
+    justify-content: center;
+  }
+}
+
+/* FOG GRADIENT LAYER */
+.home::before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: radial-gradient(circle, rgba(0,217,255,0.03) 20%, transparent 70%),
+              radial-gradient(circle, rgba(255,0,204,0.02) 20%, transparent 70%);
+  animation: fogMove 60s linear infinite;
+  z-index: 0;
+}
+
+/* FLOATING ORBS */
+.home::after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0,217,255,0.08), transparent 70%);
+  border-radius: 50%;
+  animation: floatOrb 30s ease-in-out infinite;
+  z-index: 0;
+  filter: blur(60px);
+}
+
+@keyframes fogMove {
+  0% { transform: rotate(0deg) scale(1); }
+  100% { transform: rotate(360deg) scale(1.2); }
+}
+
+@keyframes floatOrb {
+  0% { transform: translateY(0px) translateX(0px); }
+  50% { transform: translateY(-40px) translateX(20px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
+
+/* Optional Grid Animation */
+@keyframes gridShift {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 50px 50px;
+  }
+}
+
+.neon-grid {
+  animation: gridShift 60s linear infinite;
+}

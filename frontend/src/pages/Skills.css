@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Titillium+Web:wght@400;600&display=swap');
+
+.skills-section {
+  padding: 4rem 2rem;
+  
+  color: #fff;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #00ffe0;
+  text-shadow: 0 0 10px #00ffe0, 0 0 30px #00ffe0;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.panel {
+  flex: 1;
+  min-width: 140px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #00ffe0;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px #00ffe08a;
+  backdrop-filter: blur(10px);
+  margin-left: 50px;
+}
+
+.panel h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: #00ffe0;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.skill-card {
+  background: #111;
+  border: 1px solid #00d9ff40;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px #00d9ff50;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px #00d9ffaa;
+}
+
+.skill-card .icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #00d9ff;
+}
+
+.skill-card p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+
+  .panel {
+    padding: 1.5rem;
+  }
+}
+.circular-tools {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 2rem auto 0;
+}
+
+.circular-tool-item {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: #0f0f2d;
+  border: 2px solid #00d9ff55;
+  border-radius: 50%;
+  text-align: center;
+  padding: 10px;
+  color: #00d9ff;
+  box-shadow: 0 0 12px #00d9ff55;
+  transition: transform 0.6s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular-tool-item:hover {
+  transform: rotate(360deg);
+  box-shadow: 0 0 25px #00d9ff99;
+}
+
+.circular-tool-item p {
+  font-size: 0.7rem;
+  margin: 4px 0 0;
+  color: #fff;
+}
+
+/* Position each tool in a circle */
+.circular-tool-item:nth-child(1) { top: 0%; left: 50%; transform: translate(-50%, 0); }
+.circular-tool-item:nth-child(2) { top: 20%; left: 85%; transform: translate(-50%, -50%); }
+.circular-tool-item:nth-child(3) { top: 70%; left: 85%; transform: translate(-50%, -50%); }
+.circular-tool-item:nth-child(4) { top: 100%; left: 50%; transform: translate(-50%, -100%); }
+
+@media (max-width: 600px) {
+  .circular-tools {
+    width: 250px;
+    height: 250px;
+  }
+
+  .circular-tool-item {
+    width: 70px;
+    height: 70px;
+  }
+
+  .circular-tool-item p {
+    font-size: 0.6rem;
+  }
+}
+.tools-stack{
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: #00ffe0;
+  text-align: center;
+}

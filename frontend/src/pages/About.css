@@ -1,0 +1,114 @@
+.about-section {
+  min-height: 80vh;
+  
+  color: #fff;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  font-family: 'Fira Code', monospace;
+}
+
+.about-terminal {
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid #00ffee33;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 0 30px #00ffee22;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.terminal-header {
+  background: #111;
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.terminal-header .green-dot,
+.terminal-header .yellow-dot,
+.terminal-header .red-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.green-dot { background: #00ff88; }
+.yellow-dot { background: #ffee00; }
+.red-dot { background: #ff3366; }
+
+.terminal-title {
+  color: #ccc;
+  margin-left: auto;
+  font-size: 0.9rem;
+}
+
+.terminal-body {
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #00ffee;
+}
+
+.prompt {
+  color: #ff00cc;
+}
+
+.response {
+  color: #b0f9ff;
+}
+
+.about-highlights {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.highlight-box {
+  background: #0d0d0d;
+  border: 1px solid #00ffff55;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  width: 220px;
+  box-shadow: 0 0 15px #00ffff33;
+  transition: transform 0.3s ease;
+}
+
+.highlight-box:hover {
+  transform: scale(1.05);
+}
+
+.highlight-icon {
+  font-size: 2rem;
+  color: #00ffee;
+  margin-bottom: 1rem;
+}
+
+.highlight-box h3 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.highlight-box p {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .about-highlights {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .highlight-box {
+    width: 100%;
+    max-width: 300px;
+  }
+}

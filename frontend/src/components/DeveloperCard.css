@@ -1,0 +1,178 @@
+.developer-card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  padding: 2rem;
+  border-radius: 12px;
+  background: rgba(20, 20, 20, 0.7);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-sizing: border-box;
+  gap: 2rem;
+}
+
+.card-left {
+  flex: 1;
+  min-width: 280px;
+  background: #0d0d0d;
+  color: #00f2ff;
+  font-family: 'Fira Code', monospace;
+  border-radius: 16px;
+  padding: 1.5rem;
+  overflow: hidden;
+  white-space: pre-wrap;
+  word-break: break-word;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  box-shadow:
+    0 0 15px rgba(0, 255, 255, 0.2),
+    inset 0 0 10px rgba(0, 255, 255, 0.05);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.card-left pre {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Syntax colors */
+.code-keyword {
+  color: #ff00ff;
+  font-weight: bold;
+}
+
+.code-var {
+  color: #ffcc00;
+}
+
+.code-key {
+  color: #00ffff;
+}
+
+.code-string {
+  color: #ffccff;
+}
+
+.code-comment {
+  color: #777;
+  font-style: italic;
+}
+
+.code-func {
+  color: #7df9ff;
+  font-weight: 500;
+}
+
+/* Glowing border animation */
+.card-left::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 18px;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 255, 255, 0.4),
+    rgba(255, 0, 255, 0.4),
+    rgba(0, 255, 255, 0.4)
+  );
+  z-index: -1;
+  filter: blur(20px);
+  opacity: 0.4;
+  animation: pulseGlow 6s ease-in-out infinite;
+}
+
+.card-left:hover {
+  transform: scale(1.02) rotateZ(0.3deg);
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Right Section */
+.card-right {
+  flex: 2;
+  min-width: 280px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.card-right .bio {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.stats {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.stats h2 {
+  font-size: 2rem;
+  color: #00ffee;
+  margin: 0;
+}
+
+.stats p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #aaa;
+}
+
+.socials {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.socials a {
+  font-size: 1.5rem;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: #00ffee;
+  transform: scale(1.1);
+}
+
+/* Responsive Optimizations */
+@media (max-width: 768px) {
+  .developer-card {
+    flex-direction: column;
+    padding: 1.2rem;
+  }
+
+  .card-left, .card-right {
+    padding: 1rem;
+  }
+
+  .card-left pre {
+    font-size: 0.8rem;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+}

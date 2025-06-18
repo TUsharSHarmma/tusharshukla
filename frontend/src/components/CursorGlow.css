@@ -1,0 +1,41 @@
+.cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  pointer-events: none;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,123,255,0.3) 0%, transparent 70%);
+  mix-blend-mode: screen;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease;
+}
+.btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  width: 120%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-45deg);
+  transition: 0.5s;
+}
+
+.btn:hover::before {
+  left: 100%;
+}

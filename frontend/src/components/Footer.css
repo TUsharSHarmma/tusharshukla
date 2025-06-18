@@ -1,0 +1,22 @@
+.footer {
+  background: radial-gradient(circle at 30% 30%, #080d24, #000);
+  color: var(--text);
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: var(--text);
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
