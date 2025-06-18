@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tusharma.vercel.app/sitemap.xml
