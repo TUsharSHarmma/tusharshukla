@@ -38,7 +38,7 @@ const DeveloperCard = () => {
 
       <div className="card-right">
         <p className="bio">
-          I'm Tushar Sharma, a passionate full-stack developer with a strong focus on Android and Web Development. I love building real-world apps that combine clean UI, smooth UX, and smart functionality—from ultra real-time location tracking to a self-made app store. I enjoy solving problems, learning cutting-edge tech, and turning ideas into polished digital products.
+          I'm <span className="highlight-name">Tushar Sharma</span>, a passionate full-stack developer with a strong focus on Android and Web Development. I love building real-world apps that combine clean UI, smooth UX, and smart functionality—from ultra real-time location tracking to a self-made app store. I enjoy solving problems, learning cutting-edge tech, and turning ideas into polished digital products.
         </p>
         <div className="stats">
           <div>
@@ -59,6 +59,6 @@ const DeveloperCard = () => {
       </div>
     </section>
   )
-}
+} 
 
 export default DeveloperCard

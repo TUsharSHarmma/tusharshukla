@@ -109,6 +109,12 @@
   justify-content: space-between;
   gap: 1rem;
 }
+.highlight-name {
+  background: linear-gradient(to right, #b81458, #ffd6ec); /* Pink sky feel */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
 
 .card-right .bio {
   font-size: 1.1rem;
