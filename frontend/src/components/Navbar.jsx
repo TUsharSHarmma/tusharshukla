@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <nav className="navbar glass-navbar">
       <img src={logo} alt="Logo" className="logo-img" />
-
+ 
       <div className={`nav-links ${open ? 'open' : ''}`}>
         <a href="#home" onClick={closeMenu}>Home</a>
         <a href="#about" onClick={closeMenu}>About</a>
