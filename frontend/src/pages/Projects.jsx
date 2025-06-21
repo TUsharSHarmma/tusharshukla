@@ -20,6 +20,15 @@ const projects = [
     tech: ['React', 'Node.js', 'MongoDB', 'UploadThing'],
     link: 'https://www.tusharstore.xyz'
   },
+
+  {
+    title: '🔐📱 OTP-based Login System',
+    description: 'A OTP verification system in my AI-powered Android app using Kotlin and Firebase Authentication.',
+    tech: ['Kotlin', 'Firebase', ' Android SDK'],
+    link: '#'
+  },
+
+
   {
     title: '💉 Blood Bank Management System',
     description: 'A full-stack project managing blood donation, requests, and supply using digital tools.',
