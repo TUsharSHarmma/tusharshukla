@@ -12,6 +12,7 @@
   gap: 2rem;
 }
 
+/* Left Code Panel */
 .card-left {
   flex: 1;
   min-width: 280px;
@@ -31,41 +32,40 @@
   transition: transform 0.3s ease;
 }
 
+.card-left:hover {
+  transform: scale(1.02) rotateZ(0.3deg);
+}
+
 .card-left pre {
   margin: 0;
   font-size: 0.9rem;
   line-height: 1.6;
 }
 
-/* Syntax colors */
+/* Syntax Highlighting */
 .code-keyword {
   color: #ff00ff;
   font-weight: bold;
 }
-
 .code-var {
   color: #ffcc00;
 }
-
 .code-key {
   color: #00ffff;
 }
-
 .code-string {
   color: #ffccff;
 }
-
 .code-comment {
   color: #777;
   font-style: italic;
 }
-
 .code-func {
   color: #7df9ff;
   font-weight: 500;
 }
 
-/* Glowing border animation */
+/* Glowing Border Effect */
 .card-left::before {
   content: "";
   position: absolute;
@@ -86,10 +86,6 @@
   animation: pulseGlow 6s ease-in-out infinite;
 }
 
-.card-left:hover {
-  transform: scale(1.02) rotateZ(0.3deg);
-}
-
 @keyframes pulseGlow {
   0%, 100% {
     opacity: 0.35;
@@ -99,7 +95,7 @@
   }
 }
 
-/* Right Section */
+/* Right Bio Panel */
 .card-right {
   flex: 2;
   min-width: 280px;
@@ -109,8 +105,9 @@
   justify-content: space-between;
   gap: 1rem;
 }
+
 .highlight-name {
-  background: linear-gradient(to right, #b81458, #ffd6ec); /* Pink sky feel */
+  background: linear-gradient(to right, #b81458, #ffd6ec);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
@@ -122,6 +119,7 @@
   color: #ccc;
 }
 
+/* Stats */
 .stats {
   display: flex;
   gap: 2rem;
@@ -140,6 +138,7 @@
   color: #aaa;
 }
 
+/* Social Icons */
 .socials {
   display: flex;
   gap: 1.2rem;
@@ -158,27 +157,55 @@
   transform: scale(1.1);
 }
 
-/* Responsive Optimizations */
+/* ✅ Mobile Responsive */
 @media (max-width: 768px) {
   .developer-card {
     flex-direction: column;
-    padding: 1.2rem;
+    padding: 1.5rem 1rem;
+    gap: 2rem;
+    margin-top: 2rem;
   }
 
-  .card-left, .card-right {
+  .card-left,
+  .card-right {
+    width: 100%;
     padding: 1rem;
+    max-width: 90%;
   }
 
   .card-left pre {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  .highlight-name {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .card-right .bio {
+    font-size: 1rem;
+    text-align: justify;
   }
 
   .stats {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: 1rem;
+  }
+
+  .stats h2 {
+    font-size: 1.6rem;
   }
 
   .socials {
     justify-content: center;
+    gap: 1rem;
+  }
+
+  .socials a {
+    font-size: 1.4rem;
   }
 }

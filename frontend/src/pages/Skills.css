@@ -2,7 +2,6 @@
 
 .skills-section {
   padding: 4rem 2rem;
-  
   color: #fff;
   font-family: 'Titillium Web', sans-serif;
 }
@@ -22,11 +21,11 @@
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
-}
+}  
 
 .panel {
   flex: 1;
-  min-width: 140px;
+  min-width: 280px;
   background: rgba(0, 0, 0, 0.3);
   border: 1px solid #00ffe0;
   padding: 2rem;
@@ -78,20 +77,24 @@
   color: #fff;
 }
 
+/* Mobile Optimization */
 @media (max-width: 768px) {
   .skills-container {
     flex-direction: column;
-    gap: 2rem;
-  }
-
-  .skills-grid {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    margin-left: 0;
+    gap: 1rem;
   }
 
   .panel {
-    padding: 1.5rem;
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
+/* Circular Tools Section */
 .circular-tools {
   position: relative;
   width: 300px;
@@ -128,7 +131,7 @@
   color: #fff;
 }
 
-/* Position each tool in a circle */
+/* Positioning in circle */
 .circular-tool-item:nth-child(1) { top: 0%; left: 50%; transform: translate(-50%, 0); }
 .circular-tool-item:nth-child(2) { top: 20%; left: 85%; transform: translate(-50%, -50%); }
 .circular-tool-item:nth-child(3) { top: 70%; left: 85%; transform: translate(-50%, -50%); }
@@ -149,7 +152,8 @@
     font-size: 0.6rem;
   }
 }
-.tools-stack{
+
+.tools-stack {
   font-size: 1.6rem;
   margin-bottom: 1.5rem;
   color: #00ffe0;

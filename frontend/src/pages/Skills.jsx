@@ -19,7 +19,7 @@ const techStack = [
   { icon: <FaAndroid />, label: 'Kotlin' },
   { icon: <SiCplusplus />, label: 'C++' },
 ];
-
+ 
 const tools = [
   { icon: <SiFigma />, label: 'Figma' },
   { icon: <FaGithub />, label: 'GitHub' },

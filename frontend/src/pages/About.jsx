@@ -6,6 +6,7 @@ import { FaCode, FaBrain, FaAward } from 'react-icons/fa6'
 function About() {
   return (
     <section className="about-section" id="about">
+    <h2 className="section-title">🙋About Me</h2>
       <motion.div
         className="about-terminal"
         initial={{ y: 80, opacity: 0 }}
@@ -18,7 +19,7 @@ function About() {
           <span className="red-dot" />
           <p className="terminal-title">Tushar.sharma@about:~$</p>
         </div>
-
+ 
         <div className="terminal-body">
           <pre>
             <code>
@@ -63,5 +64,5 @@ function About() {
     </section>
   )
 }
-
+ 
 export default About

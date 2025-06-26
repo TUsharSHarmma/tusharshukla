@@ -11,7 +11,7 @@ function Home() {
       <div className="neon-grid"></div>
 
       <div className="home-content">
-
+ 
         <motion.div
           className="image-wrapper"
           initial={{ scale: 0 }}

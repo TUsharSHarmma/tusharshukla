@@ -81,7 +81,7 @@ function Contact() {
                   <p>Tushar Sharma</p>
                 </div>
               </div>
-              <a href="https://linkedin.com/in/tusharsharma" target="_blank" rel="noreferrer" className="social-btn blue">
+              <a href="https://linkedin.com/in/tusharsharma18-cse" target="_blank" rel="noreferrer" className="social-btn blue">
                 Message <FaLinkedin />
               </a>
             </div>

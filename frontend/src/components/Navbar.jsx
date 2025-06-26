@@ -9,6 +9,7 @@ function Navbar() {
   const toggleMenu = () => setOpen(!open);
   const closeMenu = () => setOpen(false);
 
+  
   return (
     <nav className="navbar glass-navbar">
       <img src={logo} alt="Logo" className="logo-img" />
