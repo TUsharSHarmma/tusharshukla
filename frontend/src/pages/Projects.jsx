@@ -6,7 +6,7 @@ const projects = [
     title: '📍 Real-Time Location Tracker',
     description: 'An Android app that tracks and stores the last 6 hours of location history with a one-time friend request system.',
     tech: ['Kotlin', 'Firebase', 'Google Maps'],
-    link: '#'
+    link: 'https://github.com/TUsharSHarmma/TrackLocation'
   },
    {
     title: '🌐 Tstore Web App',
@@ -25,7 +25,7 @@ const projects = [
     title: '🔐📱 OTP-based Login System',
     description: 'A OTP verification system in my AI-powered Android app using Kotlin and Firebase Authentication.',
     tech: ['Kotlin', 'Firebase', ' Android SDK'],
-    link: '#'
+    link: 'https://github.com/TUsharSHarmma/OTP-based-Login'
   },
 
 
