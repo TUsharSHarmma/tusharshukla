@@ -28,7 +28,7 @@ function Home() {
           transition={{ duration: 0.8 }}
         >
           <h1>
-            Hi, I’m <span className="neon">Tushar Shukla</span> 👋
+            Hi, I’m <span className="neon">Tushar Shuklaa</span> 👋
             <br />
             <span className="typewriter-text">
               <Typewriter
@@ -46,7 +46,7 @@ function Home() {
 
           <div className="btn-group">
             <a href="#projects" className="btn-glow">🚀 See My Work</a>
-            <a href="/Tushar_Shukla_Resume.pdf" download className="btn-glow outline">
+            <a href="/Tushar-Shukla-Resume.pdf" download className="btn-glow outline">
               📄 Resume
             </a>
           </div>
