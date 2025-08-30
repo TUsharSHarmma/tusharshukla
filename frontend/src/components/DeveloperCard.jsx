@@ -12,11 +12,11 @@ const DeveloperCard = () => {
             <br />
             &nbsp;&nbsp;<span className="code-key">firstName</span>: <span className="code-string">&quot;Tushar&quot;</span>,
             <br />
-            &nbsp;&nbsp;<span className="code-key">lastName</span>: <span className="code-string">&quot;Sharma&quot;</span>,
+            &nbsp;&nbsp;<span className="code-key">lastName</span>: <span className="code-string">&quot;Shukla&quot;</span>,
             <br />
             &nbsp;&nbsp;<span className="code-key">location</span>: <span className="code-string">&quot;India&quot;</span>,
             <br />
-            &nbsp;&nbsp;<span className="code-key">skills</span>: [<span className="code-string">&quot;React&quot;</span>, <span className="code-string">&quot;Android&quot;</span>, <span className="code-string">&quot;Node.js&quot;</span>],
+            &nbsp;&nbsp;<span className="code-key">skills</span>: [<span className="code-string">&quot;React&quot;</span>, <span className="code-string">&quot;C++&quot;</span>,<span className="code-string">&quot;Python&quot;</span>,<span className="code-string">&quot;Node.js&quot;</span>],
             <br />
             &nbsp;&nbsp;<span className="code-key">hobby</span>: <span className="code-func">repeat</span> = () =&gt; &#123;
             <br />
@@ -38,7 +38,7 @@ const DeveloperCard = () => {
 
       <div className="card-right">
         <p className="bio">
-          I'm <span className="highlight-name">Tushar Sharma</span>, a passionate full-stack developer with a strong focus on Android and Web Development. I love building real-world apps that combine clean UI, smooth UX, and smart functionality—from ultra real-time location tracking to a self-made app store. I enjoy solving problems, learning cutting-edge tech, and turning ideas into polished digital products.
+          I'm <span className="highlight-name">Tushar Shukla</span>, a passionate full-stack developer with a strong focus on Web Development. I love building real-world apps that combine clean UI, smooth UX, and smart functionality—from ultra real-time location tracking to a self-made app store. I enjoy solving problems, learning cutting-edge tech, and turning ideas into polished digital products.
         </p>
         <div className="stats">
           <div>

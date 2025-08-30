@@ -65,7 +65,7 @@ function Contact() {
                 <FaEnvelope className="social-logo" />
                 <div>
                   <h4>Email</h4>
-                  <p>tusharsharmaprayagraj@gmail.com</p>
+                  <p>shukla.tushar0219@gmail.com</p>
                 </div>
               </div>
               <a href="mailto:tusharsharmaprayagraj@gmail.com" className="social-btn red">
@@ -78,10 +78,10 @@ function Contact() {
                 <FaLinkedin className="social-logo" />
                 <div>
                   <h4>LinkedIn</h4>
-                  <p>Tushar Sharma</p>
+                  <p>Tushar Shukla</p>
                 </div>
               </div>
-              <a href="https://linkedin.com/in/tusharsharma18-cse" target="_blank" rel="noreferrer" className="social-btn blue">
+              <a href="https://linkedin.com/in/tushar-shukla-11441924b" target="_blank" rel="noreferrer" className="social-btn blue">
                 Message <FaLinkedin />
               </a>
             </div>
@@ -91,10 +91,10 @@ function Contact() {
                 <FaWhatsapp className="social-logo" />
                 <div>
                   <h4>WhatsApp</h4>
-                  <p>+91 9026333543</p>
+                  <p>+91 9369990604</p>
                 </div>
               </div>
-              <a href="https://wa.me/919026333543" target="_blank" rel="noreferrer" className="social-btn green">
+              <a href="https://wa.me/919369990604" target="_blank" rel="noreferrer" className="social-btn green">
                 Message <FaWhatsapp />
               </a>
             </div>

@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 function Footer() {
   return (
     <footer className="footer">
-      <p>© 2025 Tushar Sharma</p>
+      <p>© 2025 Tushar Shukla</p>
       <div className="social-icons">
         <a href="https://github.com/yourgithub" target="_blank" rel="noreferrer">
           <FaGithub />

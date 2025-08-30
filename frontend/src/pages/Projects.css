@@ -13,7 +13,9 @@
   margin: 0 auto;
 }
 
-
+.zen{
+  color:#ff3366;
+}
 .project-card {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 14px;

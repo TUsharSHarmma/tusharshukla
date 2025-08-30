@@ -17,6 +17,7 @@ function Navbar() {
       <div className={`nav-links ${open ? 'open' : ''}`}>
         <a href="#home" onClick={closeMenu}>Home</a>
         <a href="#about" onClick={closeMenu}>About</a>
+        <a href="#experience" onClick={closeMenu}>Experience</a>
         <a href="#skills" onClick={closeMenu}>Skills</a>
         <a href="#projects" onClick={closeMenu}>Projects</a>
         <a href="#testimonials" onClick={closeMenu}>Testimonials</a>

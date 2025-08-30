@@ -28,11 +28,11 @@ function Home() {
           transition={{ duration: 0.8 }}
         >
           <h1>
-            Hi, I’m <span className="neon">Tushar Sharma</span> 👋
+            Hi, I’m <span className="neon">Tushar Shukla</span> 👋
             <br />
             <span className="typewriter-text">
               <Typewriter
-                words={['Android Developer', 'Web Developer', 'Problem Solver']}
+                words={['Full-Stack Developer', 'Web Developer', 'Problem Solver']}
                 loop
                 cursor
                 cursorStyle="_"
@@ -42,11 +42,11 @@ function Home() {
               />
             </span>
           </h1>
-          <p className="subtitle">Android & Web Developer | Building real-world apps</p>
+          <p className="subtitle">Web Developer | Building real-world apps</p>
 
           <div className="btn-group">
             <a href="#projects" className="btn-glow">🚀 See My Work</a>
-            <a href="/Tushar_Sharma_Resume.pdf" download className="btn-glow outline">
+            <a href="/Tushar_Shukla_Resume.pdf" download className="btn-glow outline">
               📄 Resume
             </a>
           </div>

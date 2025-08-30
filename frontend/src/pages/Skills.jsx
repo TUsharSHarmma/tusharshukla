@@ -1,11 +1,11 @@
 import React from 'react';
 import './Skills.css';
 import {
-  FaReact, FaNodeJs, FaGithub, FaAndroid, FaDatabase, FaProjectDiagram, FaJava
+  FaReact, FaNodeJs, FaGithub, FaAndroid, FaDatabase, FaProjectDiagram, FaJava,
 } from 'react-icons/fa';
 import {
   SiMongodb, SiFirebase, SiJavascript, SiHtml5, SiCss3,
-  SiFigma,SiCplusplus,
+  SiFigma,SiCplusplus,SiPython,SiPostman,
 } from 'react-icons/si';
 
 
@@ -16,12 +16,13 @@ const techStack = [
   { icon: <SiCss3 />, label: 'CSS3' },
   { icon: <FaJava />, label: 'Java' },
   { icon: <FaDatabase />, label: 'SQL' },
-  { icon: <FaAndroid />, label: 'Kotlin' },
   { icon: <SiCplusplus />, label: 'C++' },
+  { icon: <SiPython />, label: 'Python' }
+
 ];
  
 const tools = [
-  { icon: <SiFigma />, label: 'Figma' },
+  { icon: <SiPostman />, label: 'Postman' },
   { icon: <FaGithub />, label: 'GitHub' },
   { icon: <SiFirebase />, label: 'Firebase' },
   { icon: <FaNodeJs />, label: 'Node.js' },
@@ -32,7 +33,7 @@ const tools = [
 function Skills() {
   return (
     <section className="skills-section" id="skills">
-      <h2 className="section-title">My Skills & Tools</h2>
+      <h2 className="section-title">Skills & Tools</h2>
       <div className="skills-container">
         <div className="tools-stack">
           <h3>🛠 Tools</h3>

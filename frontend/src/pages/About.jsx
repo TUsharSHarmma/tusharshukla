@@ -17,20 +17,20 @@ function About() {
           <span className="green-dot" />
           <span className="yellow-dot" />
           <span className="red-dot" />
-          <p className="terminal-title">Tushar.sharma@about:~$</p>
+          <p className="terminal-title">Tushar.shukla@about:~$</p>
         </div>
  
         <div className="terminal-body">
           <pre>
             <code>
               <span className="prompt">$</span> who_am_i <br />
-              <span className="response">Final Year CSE Student | Full Stack & Android Dev</span> <br /><br />
+              <span className="response">Final Year CSE Student | Full Stack Developer</span> <br /><br />
 
 
               <span className="prompt">$</span> hobbyism <br />
               <span className="response">
                 Passionate about solving real-world problems with code. <br />
-                Specialize in React, Node.js, Android, Firebase & more. <br />
+                Specialize in React, Node.js, MongoDB, Firebase & more. <br />
                 Exploring AI, Web3 & System Design. <br />
                 Believer in continuous learning & clean architecture.
               </span>

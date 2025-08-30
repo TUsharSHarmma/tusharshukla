@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import Loader from './components/Loader';
 import CursorGlow from './components/CursorGlow';
 import './App.css'; // ✅ Required for styling
+import Experience from './pages/Experience';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
       {/* 🎯 Shared background for other sections */}
       <div className="global-bg">
         <About />
+        <Experience />
         <Skills />
         <Projects />
         <Testimonials />

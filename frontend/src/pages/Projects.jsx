@@ -3,38 +3,21 @@ import './Projects.css';
 
 const projects = [
   {
-    title: '📍 Real-Time Location Tracker',
-    description: 'An Android app that tracks and stores the last 6 hours of location history with a one-time friend request system.',
-    tech: ['Kotlin', 'Firebase', 'Google Maps'],
-    link: 'https://github.com/TUsharSHarmma/TrackLocation'
+    title: '📍 Shortest Path Visualizer',
+    description: 'A Full-Stack app to visualize shortest path algorithms like Dijkstra, A*, BFS, and DFS on a grid. Built with React for the frontend and Node.js for the backend.',
+    tech: ['MERN', 'MonogoDB', 'Google Maps'],
+    link: ''
   },
    {
-    title: '🌐 Tstore Web App',
+    title: '🌐 Expense Tracker',
     description: (
       <>
-        A React & Node.js-based mini playstore where I upload and manage my own Android APKs.
-        <br />
-        Visit: <a href="https://www.tusharstore.xyz" target="_blank" rel="noopener noreferrer" style={{ color: '#00aaff' }}>https://www.tusharstore.xyz</a>
+        A Full-Stack expense tracker app with CRUD functionalities. Enabled real-time balance updates using Axios.
       </>
     ),
-    tech: ['React', 'Node.js', 'MongoDB', 'UploadThing'],
-    link: 'https://www.tusharstore.xyz'
+    tech: ['React', 'Node.js', 'MongoDB', 'RESTful APIs'],
+    link: ''
   },
-
-  {
-    title: '🔐📱 OTP-based Login System',
-    description: 'A OTP verification system in my AI-powered Android app using Kotlin and Firebase Authentication.',
-    tech: ['Kotlin', 'Firebase', ' Android SDK'],
-    link: 'https://github.com/TUsharSHarmma/OTP-based-Login'
-  },
-
-
-  {
-    title: '💉 Blood Bank Management System',
-    description: 'A full-stack project managing blood donation, requests, and supply using digital tools.',
-    tech: ['HTML', 'CSS', 'PHP', 'MySQL'],
-    link: '#'
-  }
 ];
 
 function Projects() {
